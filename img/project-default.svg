@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f5f5f5"/>
+  
+  <!-- Project icon -->
+  <g transform="translate(400, 225)">
+    <!-- Computer monitor -->
+    <rect x="-100" y="-80" width="200" height="140" rx="5" fill="#0066cc" />
+    <rect x="-90" y="-70" width="180" height="120" rx="2" fill="#ffffff" />
+    
+    <!-- Code symbols -->
+    <text x="-70" y="-40" font-family="monospace" font-size="20" fill="#0066cc">&lt;/&gt;</text>
+    <text x="-70" y="0" font-family="monospace" font-size="14" fill="#333333">function() {</text>
+    <text x="-70" y="20" font-family="monospace" font-size="14" fill="#333333">  return;</text>
+    <text x="-70" y="40" font-family="monospace" font-size="14" fill="#333333">}</text>
+    
+    <!-- Monitor stand -->
+    <rect x="-20" y="60" width="40" height="20" fill="#0066cc" />
+    <rect x="-40" y="80" width="80" height="10" rx="2" fill="#0066cc" />
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="24" fill="#333333" text-anchor="middle">Project Preview</text>
+</svg>
