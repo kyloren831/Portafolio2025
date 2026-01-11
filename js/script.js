@@ -1,5 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
     
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Copiar email a _replyto
+        form.querySelector('input[name="_replyto"]').value =
+            form.querySelector('input[name="email"]').value;
+
+        const data = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                alert('✅ Message sent successfully!');
+                form.reset();
+            } else {
+                const result = await response.json();
+                console.error(result);
+                alert('❌ Error sending message');
+            }
+        } catch (error) {
+            console.error(error);
+            alert('⚠️ Network error');
+        }
+    });
+
+
     // Añadir desfase a la animación de los iconos de tecnología
     const techIcons = document.querySelectorAll('.tech-icon');
     techIcons.forEach((icon, index) => {

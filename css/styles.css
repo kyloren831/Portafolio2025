@@ -67,6 +67,11 @@ ul {
     color: var(--light-background);
 }
 
+.info-title{
+    color:var(--light-background);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 .section-title::after {
     content: '';
     position: absolute;
@@ -88,7 +93,7 @@ ul {
     height: 100%;
     color: white;
     padding: 1rem;
-    
+    z-index: 900;
     display: flex;
     align-items: center;
 }
@@ -250,7 +255,7 @@ nav {
 
 .profile-image {
     width: 300px;
-    height: 300px;
+    height: 340px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--light-text);
@@ -667,7 +672,28 @@ nav {
 .contact-info {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #0B3D2E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+     color:  var(--light-background);
+     margin-top: 20%;
+     margin-bottom: 20%;
 }	
+.contact-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+    margin-top: 5%;
+}
+.contact-info ul li a{
+    color:  var(--light-background);
+}
+
 .contact-info img{
     width: 100%;
     transition: transform 0.5s ease; 
@@ -1345,6 +1371,7 @@ footer {
             .projects-section {
                 padding: 60px 20px;
             }
+             
         }
 
         @media (max-width: 480px) {
@@ -1459,4 +1486,53 @@ footer {
             filter: blur(0px);
     opacity: 1;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+   .sidebar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--header-color);
+        z-index: 999;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+    }
+    .nav-links {
+        background-color: var(--header-color);
+    }
+
+    .nav-links a {
+        color: var(--light-text);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--header-color);
+        z-index: 999;
+    }
+    .sidebar-nav {
+        flex-direction: row;
+    }
+
+}
+
+
+#education,
+#contact {
+    scroll-margin-top: 90px;
 }
