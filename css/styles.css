@@ -35,9 +35,15 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: #081a22;
 }
-
+.page-content {
+    background: linear-gradient(
+        135deg,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
+}
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -235,6 +241,11 @@ nav {
     color: var(--light-text);
     padding: 0 20px;
     padding-top: 70px; /* Added padding to account for fixed navbar height */
+    background-image: url("/img/Create_a_cinematic_hero_background_image_for_a_mod_delpmaspu\ \(1\).png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-container {
